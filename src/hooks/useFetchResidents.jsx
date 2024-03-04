@@ -10,7 +10,9 @@ const useFetchResidents = (residentsUrls) => {
     const fetchProperties = async () => {
       setIsLoading(true);
       try {
-        const residentPromises = residentsUrls.map(url => axios.get(url));
+        const residentPromises = residentsUrls.map(url => axios.get(url, {
+          headers: { 'Content-Type': 'application/json' }
+        }));
         const results = await Promise.all(residentPromises);
         setData(results);
       } catch (err) {
