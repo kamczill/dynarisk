@@ -26,3 +26,28 @@ To get a local copy up and running, follow these simple steps.
   ```sh
   npm install npm@latest -g
   ```
+
+### Installation
+
+1. Clone the repository
+
+```sh
+git clone https://github.com/kamczill/dynarisk.git
+```
+2. Install NPM packages
+
+```sh
+npm install
+```
+
+3. Start the development server
+
+```sh
+npm run dev
+```
+
+### Usage
+Navigate to the homepage to view the list of planets. Click on any planet name to view more detailed information about that planet. Use the pagination controls at the bottom of the page to view more planets.
+
+### Contributing
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
